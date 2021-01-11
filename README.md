@@ -34,3 +34,11 @@ Simply install scipy. You can also install with using [requirements.txt](./requi
 ```
 python ./estimate-pose3d.py
 ```
+
+### As for the sample data ...
+
+The sample data in `sample/` is from [ynyBonfennil/Blender-Camera-Calibration](https://github.com/ynyBonfennil/Blender-Camera-Calibration).
+
+As you can see, the images are not taken in a real environment but in virtual environment (blender). But it seems HigherHRNet works without any problems, and what is better, it is easier to check the 3D keypoint estimation result because you can use a cursor in blender.
+
+![sample image](./sample/images/Camera.003.png)
