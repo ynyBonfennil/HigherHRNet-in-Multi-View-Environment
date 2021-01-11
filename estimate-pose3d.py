@@ -82,20 +82,10 @@ if __name__ == "__main__":
     points3Ds = np.round(points3Ds, decimals=5)
 
     # print
-    print("Nose: ({0}, {1}, {2})".format(points3Ds[0][0], points3Ds[0][1], points3Ds[0][2]))
-    print("Left Eye: ({0}, {1}, {2})".format(points3Ds[1][0], points3Ds[1][1], points3Ds[1][2]))
-    print("Right Eye: ({0}, {1}, {2})".format(points3Ds[2][0], points3Ds[2][1], points3Ds[2][2]))
-    print("Left Ear: ({0}, {1}, {2})".format(points3Ds[3][0], points3Ds[3][1], points3Ds[3][2]))
-    print("Right Ear: ({0}, {1}, {2})".format(points3Ds[4][0], points3Ds[4][1], points3Ds[4][2]))
-    print("Left Shoulder: ({0}, {1}, {2})".format(points3Ds[5][0], points3Ds[5][1], points3Ds[5][2]))
-    print("Right Shoulder: ({0}, {1}, {2})".format(points3Ds[6][0], points3Ds[6][1], points3Ds[6][2]))
-    print("Left Elbow: ({0}, {1}, {2})".format(points3Ds[7][0], points3Ds[7][1], points3Ds[7][2]))
-    print("Right Elbow: ({0}, {1}, {2})".format(points3Ds[8][0], points3Ds[8][1], points3Ds[8][2]))
-    print("Left Wrist: ({0}, {1}, {2})".format(points3Ds[9][0], points3Ds[9][1], points3Ds[9][2]))
-    print("Right Wrist: ({0}, {1}, {2})".format(points3Ds[10][0], points3Ds[10][1], points3Ds[10][2]))
-    print("Left Hip: ({0}, {1}, {2})".format(points3Ds[11][0], points3Ds[11][1], points3Ds[11][2]))
-    print("Right Hip: ({0}, {1}, {2})".format(points3Ds[12][0], points3Ds[12][1], points3Ds[12][2]))
-    print("Left Knee: ({0}, {1}, {2})".format(points3Ds[13][0], points3Ds[13][1], points3Ds[13][2]))
-    print("Right Knee: ({0}, {1}, {2})".format(points3Ds[14][0], points3Ds[14][1], points3Ds[14][2]))
-    print("Left Ankle: ({0}, {1}, {2})".format(points3Ds[15][0], points3Ds[15][1], points3Ds[15][2]))
-    print("Right Ankle: ({0}, {1}, {2})".format(points3Ds[16][0], points3Ds[16][1], points3Ds[16][2]))
+    keypoint_names = [
+        "Nose", "Left Eye", "Right Eye", "Left Ear", "Right Ear", "Left Shoulder", "Right Shoulder",
+        "Left Elbow", "Right Elbow", "Left Wrist", "Right Wrist", "Left Hip", "Right Hip", 
+        "Left Knee", "Right Knee", "Left Ankle", "Right Ankle",
+    ]
+    for i, name in enumerate(keypoint_names):
+        print("{0}\t({1}, {2}, {3})".format(name, points3Ds[i][0], points3Ds[i][1], points3Ds[i][2]))
