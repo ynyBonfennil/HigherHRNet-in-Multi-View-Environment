@@ -1,6 +1,6 @@
 # HigherHRNet in Multi-View Envionment
 
-This is a sample implementation for pose estimation in 3D with HigherHRNet on multi-view environment. Multi-view triangulation is adopted.
+This is a sample implementation for pose estimation in 3D with HigherHRNet on multi-view environment. Multi-view triangulation is used here.
 
 ## How it works
 
